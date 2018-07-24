@@ -1,0 +1,59 @@
+{
+  "name": "@pinyin/event",
+  "version": "0.0.1",
+  "description": "Event driven everything.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "prepublishOnly": "rm -rf dist && npx tsc",
+    "test": "rm -rf dist && npx tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pinyin/event.git"
+  },
+  "keywords": [
+    "event"
+  ],
+  "author": "Bo Bao <bob432091@gmail.com> (https://github.com/pinyin)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pinyin/event/issues"
+  },
+  "homepage": "https://github.com/pinyin/event#readme",
+  "devDependencies": {
+    "@types/jest": "^23.3.0",
+    "jest": "^23.4.1",
+    "ts-jest": "^23.0.1",
+    "typescript": "^2.9.2",
+    "typings-tester": "^0.3.1"
+  },
+  "dependencies": {
+    "@types/uuid": "^3.4.3",
+    "tslib": "^1.9.3",
+    "uuid": "^3.3.2"
+  },
+  "jest": {
+    "roots": [
+      "src"
+    ],
+    "transform": {
+      "^.+\\.(t|j)sx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
+    "verbose": true
+  }
+}
